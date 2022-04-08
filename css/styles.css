@@ -25,6 +25,10 @@ body {
     list-style: none;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 /*----------------------HEADER-----------------------*/
 
 .header-logo {
@@ -93,7 +97,6 @@ color: var(--accent-text-color);
 
 .hero-btn {
     font-family: inherit;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -102,12 +105,15 @@ color: var(--accent-text-color);
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    background-color: var(--accent-text-color);
+
 }
 
 .hero-btn:hover,
 .hero-btn:focus,
 .hero-btn:active {
-    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+    background-color:#FFFFFF;
 }
 
 /*----------------------FEATURES-----------------------*/
