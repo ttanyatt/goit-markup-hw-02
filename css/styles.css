@@ -1,11 +1,19 @@
 :root {
-    --header-color: #212121;
-    --accent-color: #2196F3;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-text-color: #2196F3;
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #F5F4FA;
+    --accent-bg-color: #2F303A;
+    --header-logo-color: #000000;
+    --footer-logo-color: #ffffff;
+    --footer-contacts-color: #rgba(255, 255, 255, 0.6);
+    --filters-bg-color: #F5F4FA;
 }
 
 body {
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .link {
@@ -16,6 +24,8 @@ body {
     list-style: none;
 }
 
+/*----------------------HEADER-----------------------*/
+
 .header-logo {
     font-family: 'Raleway';
     font-style: normal;
@@ -23,16 +33,30 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-text-color);
 }
 
-.header-link {
+.header-logo-part {
+    color: var(--header-logo-color);
+}
+
+.navigation-link  {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--header-color)
+    color: var(--primary-text-color)
 }
+
+.navigation-link:hover,
+.navigation-link:focus {
+color: var(--accent-text-color);
+}
+
+.current {
+    color: var(--accent-text-color);
+}
+
 
 .contacts-mail,
 .contacts-tel {
@@ -49,6 +73,8 @@ body {
 .contacts-tel:focus {
     color: #2196F3;
 }
+
+/*----------------------HERO-----------------------*/
 
 .hero {
     background-color: #2F303A;
@@ -83,6 +109,8 @@ body {
     background-color: var(--accent-color);
 }
 
+/*----------------------FEATURES-----------------------*/
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -111,19 +139,21 @@ body {
     color: #757575;
 }
 
+/*----------------------GALLERY-----------------------*/
+
 .gallery-title {
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
 
+/*----------------------TEAM-----------------------*/
+
 .team-title {
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+   letter-spacing: 0.03em;
     color: #212121;
 }
 
@@ -143,6 +173,8 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+/*----------------------FOOTER-----------------------*/
 
 .footer {
     background-color: #2F303A;
