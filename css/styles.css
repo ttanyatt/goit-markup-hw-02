@@ -220,3 +220,4 @@ color: var(--accent-text-color);
 .footer-mail:focus,
 .footer-tel:focus {
     color: #2196F3;
+}
