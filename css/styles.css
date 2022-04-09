@@ -9,12 +9,13 @@
     --footer-logo-color: #ffffff;
     --footer-adress-color: #ffffff;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
-    --filters-bg-color: #F5F4FA;
+    --btn-text-color: #ffffff;
 }
 
 body {
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
 }
 
 .link {
@@ -27,6 +28,7 @@ body {
 
 .btn {
     cursor: pointer;
+border: none;
 }
 
 /*----------------------HEADER-----------------------*/
@@ -136,14 +138,14 @@ color: var(--accent-text-color);
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .features-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 /*----------------------GALLERY-----------------------*/
@@ -152,16 +154,24 @@ color: var(--accent-text-color);
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 /*----------------------TEAM-----------------------*/
+
+.team {
+    background-color: var(--secondary-bg-color);
+}
+
+.team-card {
+    background-color: var(--primary-bg-color);
+}
 
 .team-title {
     font-size: 36px;
     line-height: 1.17;
    letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .team-card-title {
@@ -170,7 +180,7 @@ color: var(--accent-text-color);
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .team-card-text {
@@ -178,7 +188,7 @@ color: var(--accent-text-color);
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 /*----------------------FOOTER-----------------------*/
@@ -204,9 +214,7 @@ color: var(--accent-text-color);
 }
 
 .footer-address {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+    font-style: normal;    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -215,9 +223,7 @@ color: var(--accent-text-color);
 
 .footer-mail,
 .footer-tel {
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -229,4 +235,42 @@ color: var(--accent-text-color);
 .footer-mail:focus,
 .footer-tel:focus {
     color: var(--accent-text-color);
+}
+
+/*----------------------PORTFOLIO MAIN-----------------------*/
+
+.filters-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63; 
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-bg-color);
+}
+
+.filters-btn:hover, .filters-btn:focus {
+    color: var(--btn-text-color);
+    background-color: var(--accent-text-color);
+}
+
+.project-card {
+    background: var(--primary-bg-color);
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+
+.project-card-title {
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--primary-text-color);
+}
+
+.project-card-text {
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--secondary-text-color);
 }
