@@ -10,12 +10,15 @@
     --footer-address-color: #ffffff;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
     --btn-text-color: #ffffff;
+    --hero-title-text-color: #FFFFFF;
 }
 
 body {
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--primary-text-color);
     background-color: var(--primary-bg-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 .link {
@@ -50,17 +53,16 @@ border: none;
 
 .nav {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.navigation-link  {
+.navigation-item  {
     color: var(--primary-text-color)
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation-item:hover,
+.navigation-item:focus {
 color: var(--accent-text-color);
 }
 
@@ -95,7 +97,7 @@ color: var(--accent-text-color);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--hero-title-text-color);
 }
 
 .hero-btn {
@@ -107,7 +109,7 @@ color: var(--accent-text-color);
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--btn-text-color);
     background-color: var(--accent-text-color);
 
 }
@@ -116,7 +118,7 @@ color: var(--accent-text-color);
 .hero-btn:focus,
 .hero-btn:active {
     color: var(--accent-text-color);
-    background-color:#FFFFFF;
+    background-color: var(--btn-text-color);
 }
 
 /*----------------------FEATURES-----------------------*/
@@ -137,15 +139,11 @@ color: var(--accent-text-color);
 .features-title {
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-text-color);
-}
+    }
 
 .features-text {
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 
@@ -154,8 +152,6 @@ color: var(--accent-text-color);
 .gallery-title {
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
 }
 
 /*----------------------TEAM-----------------------*/
@@ -171,8 +167,6 @@ color: var(--accent-text-color);
 .team-title {
     font-size: 36px;
     line-height: 1.17;
-   letter-spacing: 0.03em;
-    color: var(--primary-text-color);
 }
 
 .team-card-title {
@@ -180,8 +174,6 @@ color: var(--accent-text-color);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
 }
 
 .team-card-text {
@@ -204,9 +196,7 @@ color: var(--accent-text-color);
 
 .address {
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .footer-address {
@@ -260,6 +250,5 @@ color: var(--primary-text-color);
 .project-card-text {
 font-size: 16px;
 line-height: 1.88;
-letter-spacing: 0.03em;
 color: var(--secondary-text-color);
 }
